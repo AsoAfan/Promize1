@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1.6rem;
+
+  position: relative;
+
+  &_logo-container {
+    height: 4.8rem;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &_nav {
+    @include centerH;
+    &-list {
+      list-style: none;
+
+      display: flex;
+      align-items: center;
+      gap: 4.8rem;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $color-text--white;
+      text-transform: capitalize;
+      font-size: 1.6rem;
+    }
+  }
+
+  &_icon {
+    color: $color-text--white;
+  }
+}
